@@ -1,0 +1,17 @@
+{%extends "plantilla.html"%}{%block tittle%}Inicio{%endblock%} {%block content%}
+
+
+<h2>Escribe una nueva Entrada del Blog</h2>
+
+<form class="login_form" action="{{url_for('create')}}" method="post">
+    <input type="text" name="titulo" placeholder="titulo">
+    <textarea name="texto" cols="30" rows="10"></textarea>
+    <input type="submit" name="submit">
+</form>
+
+
+
+
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nisi veniam eius suscipit, illo, rem ducimus animi amet eum modi neque delectus saepe? Adipisci aperiam laboriosam hic asperiores incidunt necessitatibus.</p>
+{%endblock%}{%block pie%}{%endblock%}

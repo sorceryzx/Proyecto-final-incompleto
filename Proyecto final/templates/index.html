@@ -1,0 +1,120 @@
+{%extends "plantilla.html"%}{%block tittle%}Inicio{%endblock%} {%block content%}
+
+<div class="wave" style="height: 150px; overflow: hidden;">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+           <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+               style="stroke: none; fill: #fff;"></path>
+       </svg>
+</div>
+
+<section class="contenedor sobre-nosotros">
+
+    <h2 class="titulo">Nuestro producto</h2>
+    <div class="contenedor-sobre-nosotros">
+        <img src="static/img/salud mental 3.jpg" alt="" class="imagen-about-us">
+        <!--<a href="http://www.freepik.com">Designed by Freepik</a>-->
+        <div class="contenido-textos">
+            <h3><span>1</span>Los mejores productos</h3>
+            <p>Lorem ipsum </p>
+            <h3><span>2</span>Los mejores productos</h3>
+            <p>Lorem ipsum </p>
+        </div>
+    </div>
+</section>
+<section class="articulos">
+    <div class="contenedor">
+        <h2 class="titulo">Articulos</h2>
+        <div class="galeria-art">
+            <div class="imagen-art">
+                <img src="static/img/depresion.png" alt="">
+                <div class="hover-galeria">
+                    <a href="{{url_for('pagina2')}}"><img src="static/img/haciendo-clic.png" alt=""></a>
+                    <p>Nuestro trabajo</p>
+                </div>
+            </div>
+
+            <div class="imagen-art">
+                <img src="static/img/ansiedad.png" alt="">
+                <div class="hover-galeria">
+                    <img src="static/img/haciendo-clic.png" alt="">
+                    <p>Nuestro trabajo</p>
+                </div>
+            </div>
+
+            <div class="imagen-art">
+                <img src="static/img/frustrado.png" alt="">
+                <div class="hover-galeria">
+                    <img src="static/img/haciendo-clic.png" alt="">
+                    <p>Nuestro trabajo</p>
+                </div>
+            </div>
+
+            <div class="imagen-art">
+                <img src="static/img/terapia.png" alt="">
+                <div class="hover-galeria">
+                    <img src="static/img/haciendo-clic.png" alt="">
+                    <p>Nuestro trabajo</p>
+                </div>
+            </div>
+
+            <div class="imagen-art">
+                <img src="static/img/felicidad.png" alt="">
+                <div class="hover-galeria">
+                    <img src="static/img/haciendo-clic.png" alt="">
+                    <p>Nuestro trabajo</p>
+                </div>
+            </div>
+
+            <div class="imagen-art">
+                <img src="static/img/terapeuta.png" alt="">
+                <div class="hover-galeria">
+                    <img src="static/img/haciendo-clic.png" alt="">
+                    <p>Nuestro trabajo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="contenedor">
+    <h2 class="titulo">Ayuda profesional</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="static/img/psicologo.png" alt="">
+            <div class="contenido-texto-card">
+                <h4>Name</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="static/img/psicologo 2.png" alt="">
+            <div class="contenido-texto-card">
+                <h4>Name</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about-services">
+    <div class="contenedor">
+        <h2 class="titulo">Nuestros servicios</h2>
+        <div class="servicio-cont">
+            <div class="servicio-ind">
+                <img src="static/img/servicio.png" alt="">
+                <h3>Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+            </div>
+            <div class="servicio-ind">
+                <img src="static/img/soporte.png" alt="">
+                <h3>Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+            </div>
+            <div class="servicio-ind">
+                <img src="static/img/cuidado.png" alt="">
+                <h3>Name</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
+            </div>
+        </div>
+    </div>
+</section>
+{%endblock%}

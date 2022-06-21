@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        {%block title%}Pagina web Proyecto final{%endblock%}
+    </title>
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}" />
+    <link rel="shortcut icon" href="static/img/cerebro.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+</head>
+
+<div>
+    <header>
+        <nav>
+            <a href="{{url_for('home')}}">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Portafolio</a>
+            <a href="{{url_for('blog')}}">Blog</a>
+            <a href="#">Contacto</a>
+            <a href="#">Login</a>
+            <a href="#">Sign up</a>
+        </nav>
+    </header>
+
+
+    <div class="main">
+
+        <div class="main_container">
+            <div class="contenido">
+                {%block content%} {%endblock%}
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="contenedor-footer">
+            <div class="content-foot">
+                <h4>Phone</h4>
+                <p>8296312</p>
+            </div>
+            <div class="content-foot">
+                <h4>Email</h4>
+                <p>8296312</p>
+            </div>
+            <div class="content-foot">
+                <h4>Location</h4>
+                <p>8296312</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy;Psicología</h2>
+    </div>
+</div>
+
+
+</body>
+
+</html>

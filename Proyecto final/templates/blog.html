@@ -1,0 +1,25 @@
+{%extends "plantilla.html"%}{%block tittle%}Inicio{%endblock%} {%block content%}
+<section>
+    <form method="post">
+
+        <h4>Buscar: </h4><input type="text" name="txtbusqueda">
+        <input type="submit" value="Buscar">
+        <br> {%for row in blogs%}
+        <tr>
+            <a href='/edit/{{row["id"]}}'>
+                <td>{{row ["id"]}}</td>
+            </a>
+            <td>{{row ["titulo"]}}</td>
+            <td>{{row ["fecha"]}}</td>
+            <td>{{row ["texto"]}}</td>
+            <br>{%endfor%}
+    </form>
+</section>
+
+
+
+<section>
+    <a href="{{url_for('agregar')}}"><button type="button">Agregar Entrada</button></a>
+
+</section>
+{%endblock%}{%block pie%}{%endblock%}
